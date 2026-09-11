@@ -14,6 +14,15 @@ O projeto DiaLoga está dividido em três aplicações:
 
 ---
 
+### link para os entregáveis
+
+* **WBS:** [clique aqui](https://miro.com/app/board/uXjVGCuHJpg=/?share_link_id=298370573967)
+* **Protótipo:** [clique aqui](https://www.figma.com/design/aZHIJxJ4OOiFgmDsUBANRi/Sem-t%C3%ADtulo?node-id=0-1&t=b79JFREWx8k3Nf6e-1)
+* **Modelo Conceitual Banco de dados:** Na pasta `docs/banco-de-dados/`
+* **Modelo lógico Banco de dados:** Na pasta `docs/banco-de-dados/`
+* **scripts Banco de dados:** Na pasta `docs/banco-de-dados/`
+
+
 ##  Sobre o Projeto
 
 O **DiaLoga** é um projeto desenvolvido como Trabalho de Conclusão de Curso (TCC), com o objetivo de utilizar a tecnologia para facilitar a comunicação e o acompanhamento entre pacientes e profissionais.
