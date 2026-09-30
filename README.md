@@ -17,7 +17,7 @@ O projeto DiaLoga está dividido em três aplicações:
 ### link para os entregáveis
 
 * **WBS:** [clique aqui](https://miro.com/app/board/uXjVGCuHJpg=/?share_link_id=298370573967)
-* **Protótipo:** [clique aqui](https://www.figma.com/design/aZHIJxJ4OOiFgmDsUBANRi/Sem-t%C3%ADtulo?node-id=0-1&t=b79JFREWx8k3Nf6e-1)
+* **Protótipo:** [clique aqui](https://www.figma.com/design/dos9pmRgG1Zdsi4Jv2Dxz3/Dialoga?node-id=0-1&t=QK3UcpP9JNshBnxi-1)
 * **Modelo Conceitual Banco de dados:** Na pasta `docs/database/modelo-conceitual`
 * **Modelo lógico Banco de dados:** Na pasta `docs/database/modelo-logico`
 * **scripts Banco de dados:** Na pasta `docs/database/scripts`
