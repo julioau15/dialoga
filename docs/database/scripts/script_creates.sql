@@ -7,10 +7,11 @@ USE db_dialoga;
 -- cria tbl_usuario
 CREATE TABLE tbl_usuario (
 	id INT NOT NULL AUTO_INCREMENT UNIQUE,
-    email VARCHAR(150) NOT NULL,
-    senha_hash VARCHAR(255),
+    email VARCHAR(150) NOT NULL UNIQUE,
+    senha_hash VARCHAR(255) NOT NULL, 
     nivel TINYINT NOT NULL,
-    data_criacao DATETIME NOT NULL
+    data_criacao DATETIME NOT NULL,
+    id_google TEXT DEFAULT NULL
 );
 
 
@@ -19,10 +20,9 @@ CREATE TABLE tbl_usuario (
 CREATE TABLE tbl_administrador (
 	id INT NOT NULL AUTO_INCREMENT UNIQUE,
     nome_completo VARCHAR(150) NOT NULL,
-    senha_provisoria TINYINT,
-    celular VARCHAR(20),
+    senha_provisoria TINYINT NOT NULL, 
     foto_avatar TEXT,
-    id_usuario  INT NOT NULL,
+    id_usuario  INT NOT NULL UNIQUE, 
     
     CONSTRAINT FK_USUARIO_ADMINISTRADOR
     FOREIGN KEY (id_usuario)
@@ -35,12 +35,13 @@ CREATE TABLE tbl_administrador (
 CREATE TABLE tbl_profissional (
 	id INT NOT NULL AUTO_INCREMENT UNIQUE,
     nome_completo VARCHAR(150) NOT NULL,
-    cpf VARCHAR(11) NOT NULL,
-    crp VARCHAR(20) NOT NULL,
+    cpf CHAR(11) NOT NULL UNIQUE,
+    crp VARCHAR(20) NOT NULL UNIQUE,
     celular VARCHAR(20),
     instituicao_clinica VARCHAR(150),
     foto_avatar TEXT,
-    id_usuario  INT NOT NULL,
+    status TINYINT,
+    id_usuario  INT NOT NULL UNIQUE,
     
     CONSTRAINT FK_USUARIO_PROFISSIONAL
     FOREIGN KEY (id_usuario)
@@ -74,7 +75,7 @@ CREATE TABLE tbl_profissional_especialidade (
 -- cria tbl_administrador_profissional
 CREATE TABLE tbl_administrador_profissional (
 	id INT NOT NULL AUTO_INCREMENT UNIQUE,
-    status_aprovacao VARCHAR(20) NOT NULL,
+    status_aprovacao TINYINT,
     data_decisao DATETIME,
     criado_em DATETIME NOT NULL,
 	id_profissional INT NOT NULL,
@@ -94,7 +95,7 @@ CREATE TABLE tbl_administrador_profissional (
 # ------- PACIENTE --------
 -- cria tbl_paciente
 CREATE TABLE tbl_paciente (
-	id INT NOT NULL AUTO_INCREMENT UNIQUE,
+    id INT NOT NULL AUTO_INCREMENT UNIQUE,
     nome_completo VARCHAR(150) NOT NULL,
     apelido VARCHAR(80),
     data_nascimento DATE,
@@ -102,7 +103,7 @@ CREATE TABLE tbl_paciente (
     foto_avatar VARCHAR(255),
     primeiro_acesso_concluido TINYINT NOT NULL,
     status_atividade VARCHAR(20) NOT NULL,
-    id_usuario  INT NOT NULL,
+    id_usuario  INT NOT NULL UNIQUE,
     
     CONSTRAINT FK_USUARIO_PACIENTE
     FOREIGN KEY (id_usuario)
