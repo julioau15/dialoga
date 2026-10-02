@@ -18,8 +18,8 @@ O projeto DiaLoga está dividido em três aplicações:
 
 * **WBS:** [clique aqui](https://miro.com/app/board/uXjVGCuHJpg=/?share_link_id=298370573967)
 * **Protótipo:** [clique aqui](https://www.figma.com/design/dos9pmRgG1Zdsi4Jv2Dxz3/Dialoga?node-id=0-1&t=QK3UcpP9JNshBnxi-1)
-* **Requisitos:** [clique aqui]()
-* **Documentação de Testes:** [clique aqui]()
+* **Requisitos:** [clique aqui](https://drive.google.com/drive/folders/1XuusPIwLsKWHOKNhdne1bNy9m-hTny93?usp=drive_link)
+* **Documentação de Testes:** [clique aqui](https://drive.google.com/drive/folders/1yvb_ywmisuCXlRef_wMocq479RUoOCf7?usp=drive_link)
 * **Modelo Conceitual Banco de dados:** Na pasta `docs/database/modelo-conceitual`
 * **Modelo lógico Banco de dados:** Na pasta `docs/database/modelo-logico`
 * **scripts Banco de dados:** Na pasta `docs/database/scripts`
